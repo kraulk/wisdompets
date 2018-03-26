@@ -1,6 +1,7 @@
 from django.db import models
 
 class Pet (models.Model):
+    objects = models.Manager()
     SEX_CHOICES = [
         ('M', 'Male'), 
         ('F', 'Female')]
@@ -19,6 +20,7 @@ class Pet (models.Model):
 
 
 class Vaccine(models.Model):
+    objects = models.Manager()
     name = models.CharField(max_length=150)
     
     def __str__(self):
