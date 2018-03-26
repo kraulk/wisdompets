@@ -2,4 +2,7 @@
 
 {
     "python.pythonPath": "${workspaceFolder}/djangoenv/bin/python",
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+    ],
 }
